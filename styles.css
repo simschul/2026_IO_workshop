@@ -1,0 +1,38 @@
+/* Base appearance: everything normal */
+.reveal .posterior, .reveal .likelihood, .reveal .prior {
+  opacity: 1;
+}
+
+/* PRIOR slide */
+.reveal section.focus-prior .posterior,
+.reveal section.focus-prior .likelihood { opacity: 0.25; }
+
+.reveal section.focus-prior .prior {
+  opacity: 1;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+/* LIKELIHOOD slide */
+.reveal section.focus-likelihood .posterior,
+.reveal section.focus-likelihood .prior { opacity: 0.25; }
+
+.reveal section.focus-likelihood .likelihood {
+  opacity: 1;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+/* POSTERIOR slide */
+.reveal section.focus-posterior .likelihood,
+.reveal section.focus-posterior .prior { opacity: 0.25; }
+
+.reveal section.focus-posterior .posterior {
+  opacity: 1;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.small-table table {
+  font-size: 0.75em; /* try 0.8em or 0.7em */
+}
