@@ -36,3 +36,66 @@
 .small-table table {
   font-size: 0.75em; /* try 0.8em or 0.7em */
 }
+
+
+/* --- Title slide layout & background --- */
+#title-slide,
+.reveal section.title-slide {
+  /* subtle “serious academic” gradient */
+  padding-top: 90px;
+}
+
+/* keep title block from feeling cramped */
+#title-slide .quarto-title-block {
+  max-width: 980px;
+}
+
+/* --- Typography hierarchy --- */
+#title-slide h1 {
+  font-size: 64px;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+}
+
+#title-slide p.subtitle,
+#title-slide .subtitle {
+  font-size: 30px;
+  line-height: 1.25;
+  opacity: 0.92;
+  margin-top: 0;
+  margin-bottom: 46px;
+}
+
+/* author / affiliation / date block */
+#title-slide .quarto-title-authors,
+#title-slide .quarto-title-meta {
+  font-size: 22px;
+  line-height: 1.35;
+  opacity: 0.92;
+}
+
+/* give the meta block a visual anchor */
+#title-slide .quarto-title-meta {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 2px solid rgba(255,255,255,0.18);
+  max-width: 720px;
+}
+
+/* optional: add a small “event tag” feel */
+#title-slide .quarto-title-meta::before {
+  content: "GWS IO-Workshop";
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-bottom: 10px;
+}
+
+/* reduce visual noise from slide number/progress on the title slide only */
+#title-slide .slide-number,
+#title-slide .progress {
+  opacity: 0.25;
+}
