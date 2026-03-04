@@ -259,8 +259,9 @@ p(\text{constraints})
 <li>centered on the initial (unbalanced) SUT,</li>
 <li>uncertainty/variance: ad-hoc approach for proof-of-concept
 <ul>
-<li>flows subject to small imbalances -&gt; small variance,</li>
-<li>flows subject to large imbalances -&gt; large variance</li>
+<li>flows subject to small imbalances -&gt; rel. small variance,</li>
+<li>flows subject to large imbalances -&gt; rel. large variance</li>
+<li>clamping to <span class="math inline">\([0.1, 0.5]\)</span></li>
 </ul></li>
 </ul>
 </section>
@@ -429,14 +430,14 @@ p(\text{constraints})
 <p><img data-src="plots/prior_vs_posterior_use.png" style="width:100.0%"></p>
 </div></div>
 </section>
-<section id="b-how-much-does-balancing-move-the-table" class="slide level2">
-<h2>1b) how much does balancing move the table?</h2>
+<section class="slide level2">
 
-<img data-src="plots/individual_samples3.png" class="r-stretch"></section>
+
+<img data-src="plots/individual_samples.png" class="r-stretch"></section>
 <section id="uncertainty-changes-selectively" class="slide level2">
 <h2>2) uncertainty changes (selectively)</h2>
 
-<img data-src="plots/uncertainty_prior_vs_posterior.png" style="width:90.0%" class="r-stretch"></section>
+<img data-src="plots/uncertainty_prior_vs_posterior.png" style="width:100.0%" class="r-stretch"></section>
 <section id="before-after-balancing" class="slide level2">
 <h2>3) Before &amp; After balancing</h2>
 
@@ -488,8 +489,8 @@ p(\text{constraints})
 <li>create a usable tool</li>
 </ul>
 </section>
-<section id="what-this-could-enables-for-statistical-offices-mrio-compilers" class="slide level2">
-<h2>What this (could) enable(s) for statistical offices &amp; MRIO compilers</h2>
+<section id="what-this-approach-could-enable-for-statistical-offices-mrio-compilers" class="slide level2">
+<h2>What this approach could enable for statistical offices &amp; MRIO compilers</h2>
 <ol type="1">
 <li><strong>Uncertainty-aware SUTs</strong> (intervals + covariance)</li>
 <li><strong>Diagnostics</strong> (where constraints bind; tension between layers)</li>
@@ -501,7 +502,7 @@ p(\text{constraints})
 <h2>Thank you</h2>
 <ul>
 <li>Slides: <a href="https://simschul.github.io/2026_IO_workshop/">https://simschul.github.io/2026_IO_workshop/</a></li>
-<li>Pre-print: tba</li>
+<li>Pre-print: coming soon…</li>
 <li>Contact: <a href="simon.schulte@indecol.uni-freiburg.de">simon.schulte@indecol.uni-freiburg.de</a></li>
 </ul>
 </section>
@@ -510,7 +511,12 @@ p(\text{constraints})
 <ol type="1">
 <li><p>What tolerances (=deviations from constraints) would you consider acceptable for the respective constraints?</p></li>
 <li><p>What kind of uncertainty info can statistical offices provide (to be encoded as priors)?</p></li>
-<li><p>IO practitioners: What would you need to make use of such an uncertainty-aware SUT? (data: full samples, covariances, …; tools: propagate uncertainty further downstream, …; etc.)</p></li>
+<li><p>IO practitioners: What would you need to make use of such an uncertainty-aware SUT?</p>
+<ul>
+<li>data: full samples, covariances, …</li>
+<li>tools: propagate uncertainty further downstream, …</li>
+<li>…</li>
+</ul></li>
 </ol>
 </section>
 <section class="slide level2">
